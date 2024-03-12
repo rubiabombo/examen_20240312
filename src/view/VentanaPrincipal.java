@@ -13,10 +13,7 @@ import controller.ControladorGimnasio;
 import model.Asistente;
 import model.Gimnasio;
 import model.Localidad;
-import supermercado.controller.ControladorCategoria;
-import supermercado.controller.ControladorProducto;
-import supermercado.model.Categoria;
-import supermercado.model.Producto;
+
 
 import java.awt.GridBagLayout;
 import javax.swing.JLabel;
@@ -182,7 +179,7 @@ public class VentanaPrincipal extends JFrame {
 			jcbasistente = new JComboBox<Asistente>();
 			jcbasistente.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					cargarAsistentes();
+					cargarAsistenteEnPantalla();
 				}
 			});
 		
